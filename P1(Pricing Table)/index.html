@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .pricing-table{
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        .pricing-table th,.pricing-table td{
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .pricing-table th{
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        .pricing-table .plan-name{
+            font-size: 1.2rem;
+        }
+
+        .pricing-table .plan-price{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .pricing-table .cta-button{
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .pricing-table .cta-button:hover{
+            background-color: #0b56a5;
+        }
+
+        .pricing-table .popular{
+            background-color: rgb(199, 199, 11);
+        }
+
+        .pricing-table tbody td:hover{
+            background-color: grey;
+        }
+
+        @media screen and (max-width : 600px){
+            .pricing-table th, .pricing-table td{
+                padding: 10px;
+            }
+            .pricing-table .cta-button{
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="pricing-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Basic</th>
+                <th>Standard</th>
+                <th class="popular">Premium</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="plan-name">Price</td>
+                <td class="plan-price">$10/month</td>
+                <td class="plan-price">$20/month</td>
+                <td class="plan-price">$50/month</td>
+            </tr>
+            <tr>
+                <td>Storage</td>
+                <td>10GB</td>
+                <td>20GB</td>
+                <td>50GB</td>
+            </tr>
+            <tr>
+                <td>Bandwidth</td>
+                <td>100GB</td>
+                <td>200GB</td>
+                <td>Unlimited</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td><button class="cta-button">Choose Plan</button></td>
+                <td><button class="cta-button">Choose Plan</button></td>
+                <td><button class="cta-button">Choose Plan</button></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
